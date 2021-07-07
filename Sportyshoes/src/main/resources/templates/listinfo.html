@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<table>
+	
+	<tr th:each="data : ${info}">
+            <td><span th:text="${data.ID}"> ID </span></td>
+            <td><span th:text="${data.name}"> Name </span></td>
+            <td><span th:text="${data.info}"> info</span></td>
+            <td><span th:text="${data.product_id}"> Product_id </span></td>
+            <td><span th:text="${data.category_id}"> Category_id </span></td>
+            <td><span th:text="${data.date_added}"> Date_added </span></td>
+        </tr>
+	
+		<!-- <tr th:each="data: list">
+			<td class="text-center" th:text="${data}">data</td>
+		</tr> -->
+	</table>
+</body>
+</html>
